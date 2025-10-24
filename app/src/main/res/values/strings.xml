@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="available">Available devices</string>
+    <string name="text_ver">V1.0.3</string>
+    <string name="app_name">VH75Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_access">Access</string>
+    <string name="label_passwd">Password</string>
+    <string name="read">Read</string>
+    <string name="write">Write</string>
+    <string name="lock">Lock</string>
+    <string name="kill">Kill</string>
+    <string name="str_data">Data</string>
+    <string name="data_hint">Data</string>
+    <string name="title_access_location">Access Location Patten</string>
+    <string name="detect">Detect</string>
+
+    <string-array name="epcs">
+        <item>Password</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>User</item>
+    </string-array>
+
+    <string name="hint_addr_start">Addr</string>
+    <string name="hint_data_len">Len</string>
+    <string name="status">Status</string>
+    <string name="mask">Mask</string>
+    <string name="scan">Scan</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="dialog_title_alert">WARNING</string>
+    <string name="inventory">Inventory</string>
+    <string name="save">Save</string>
+    <string name="count_lable">-count:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="autolink">auto link</string>
+    <string name="queryparam">Query Parameter</string>
+    <string name="session">Session</string>
+    <string name="detectsound">detect sound</string>
+
+    <string-array name="sessionKV">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+    <string-array name="Q">
+        <item>~1</item>
+        <item>~2</item>
+        <item>~4</item>
+        <item>~8</item>
+        <item>~16</item>
+        <item>~32</item>
+        <item>~64</item>
+        <item>~128</item>
+    </string-array>
+    <string-array name="QV">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+        <item>128</item>
+    </string-array>
+    <string-array name="AB">
+        <item>AB</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+
+    <string name="timeout">Timeout(ms)</string>
+    <string name="skipname">skip same</string>
+    <string name="singletag">single tag</string>
+    <string name="stop">stop</string>
+    <string name="checkshock">check shock</string>
+    <string name="txpower">Tx power</string>
+    <string name="mac_title">mac</string>
+    <string name="softversion_title">softwork version</string>
+    <string name="hdversion">hardware version</string>
+    <string name="content_description_detect_status">detect status</string>
+    <string name="txt_Q_title">Q</string>
+    <string name="radio_lang_eng">English</string>
+    <string name="radio_lang_chinese">Chinese</string>
+    <string name="connected">Connected</string>
+    <string name="notconnected">Not Connected</string>
+    <string name="link_tab">Link</string>
+    <string name="access_tab">Access</string>
+    <string name="inventory_tab">Inventory</string>
+    <string name="config_tab">Config</string>
+
+    <!-- message -->
+    <string name="msg_bt_not_support">Bluetooth not supported on this deviece</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_fail_to_connect">Failed to connect to </string>
+    <string name="msg_paring">Pairing……</string>
+    <string name="msg_paired">Pairing Success……</string>
+    <string name="msg_scan_over">Scan Over&#8230;</string>
+    <string name="msg_scaning">Scaning...</string>
+    <string name="msg_read_config_fail">Read Config Param Failed</string>
+    <string name="msg_waring">WARING</string>
+    <string name="msg_already_connect">Device has already connected...</string>
+    <string name="msg_bt_not_enable">Bluetooth not enabled on this devices, please enable bluetooth first</string>
+    <string name="msg_connected">Connected...</string>
+    <string name="msg_connecting">Connecting...</string>
+    <string name="msg_connect_fail">Connected Failed!</string>
+    <string name="msg_inventory_stoping">Stopping......</string>
+    <string name="msg_device_not_connect">No availbe conneced  device!</string>
+    <string name="msg_command_fail">Command Failed!</string>
+    <string name="msg_timeout">TImeout!!!</string>
+    <string name="msg_data_must_be_hex">Data must be HEX number...</string>
+    <string name="msg_passwd_must_be_hex">Password must be HEX number...</string>
+    <string name="msg_kill_succ">KillTag successd...</string>
+    <string name="msg_kill_fail">KillTag failed...</string>
+    <string name="msg_kill_timeout">KillTag Timeout...</string>
+    <string name="msg_epc_must_larger_zero">Epc id length must be larger than 0</string>
+    <string name="msg_passwd_len_must_eight">Password number length must be 8</string>
+    <string name="msg_erase_ok">EraseBlock successd...</string>
+    <string name="msg_erase_fail">EraseBlock failed...</string>
+    <string name="msg_erase_timeout">EraseBlock timtout...</string>
+    <string name="msg_addr_must_be_hex">Addr  must be Hex and postive number...</string>
+    <string name="msg_len_must_be_hex">Len must be Hex and postive number...</string>
+    <string name="msg_blocklock_succ">BlockLock successd...</string>
+    <string name="msg_blocklock_fail">BlockLock failed...</string>
+    <string name="msg_blocklock_timeout">BlockLock timeout...</string>
+    <string name="msg_wirtewordblock_succ">WriteWordBlock successd...</string>
+    <string name="msg_wirtewordblock_fail">WriteWordBlock failed...</string>
+    <string name="msg_wirtewordblock_timeout">WriteWordBlock timeout...</string>
+    <string name="msg_ReadWordBlock_title">ReadWordBlock data </string>
+    <string name="msg_ReadWordBlock_timeout">ReadWordBlock timeout... </string>
+    <string name="msg_cur_version">Current Version:</string>
+    <string name="msg_find_new_version">,Find New Version:</string>
+    <string name="msg_soft_update">Version Update</string>
+    <string name="msg_update">Update</string>
+    <string name="msg_update_later">Update Later</string>
+    <string name="cancel">Cancel</string>
+    <string name="msg_check_update_fail">Check New Version Failed……</string>
+    <string name="msg_download_apk_fail">Download apk Failed……</string>
+    <string name="radio_check_update">Check Update</string>
+    <string name="msg_Exitbox_Title">Infomation</string>
+    <string name="msg_Exitbox_Context">Are you sure you want to exit?</string>
+    <string name="msg_Exitbox_BtnOK">OK</string>
+    <string name="msg_Exitbox_BtnCancal">Cancel</string>
+    <string name="checkTest">Test</string>
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_config"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/radio_autolink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:text="@string/autolink"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/radio_detectsound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="52dp"
+            android:layout_toRightOf="@+id/radio_autolink"
+            android:text="@string/detectsound"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/radio_skipname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_autolink"
+            android:layout_below="@+id/radio_autolink"
+            android:text="@string/skipname"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/radio_singletag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radio_skipname"
+            android:layout_alignBottom="@+id/radio_skipname"
+            android:layout_alignLeft="@+id/radio_detectsound"
+            android:text="@string/singletag"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/radio_chechshock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_skipname"
+            android:layout_below="@id/radio_skipname"
+            android:text="@string/checkshock"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txt_queryparamtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_chechshock"
+            android:layout_below="@+id/radio_chechshock"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/queryparam"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0000ff" />
+
+        <LinearLayout
+            android:id="@+id/wrap_spins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_queryparamtitle"
+            android:layout_below="@id/txt_queryparamtitle"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/wrap_timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/wrap_spins"
+            android:layout_below="@id/wrap_spins"
+            android:layout_marginBottom="3dp" >
+
+            <TextView
+                android:id="@+id/txt_timeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/timeout"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edit_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt_timeout"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@id/txt_timeout"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/timeout"
+                android:inputType="number" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_txpower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/wrap_timeout"
+            android:layout_below="@+id/wrap_timeout"
+            android:text="@string/txpower" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_txpower"
+            android:layout_below="@+id/text_txpower"
+            android:layout_margin="3dp"
+            android:max="33" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text_txpower"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:text="dBm" />
+
+        <TextView
+            android:id="@+id/text_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wrap_timeout"
+            android:layout_toLeftOf="@+id/textView2"
+            android:text="20" />
+
+        <TextView
+            android:id="@+id/text_sw_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:layout_below="@+id/seekBar1" />
+
+        <TextView
+            android:id="@+id/text_hd_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:layout_below="@+id/text_sw_version" />
+
+        <RadioGroup
+            android:id="@+id/group_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:layout_below="@id/text_hd_version"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio_lang_eng" />
+
+            <RadioButton
+                android:id="@+id/radio_ch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_lang_chinese" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radio_chechshock"
+            android:layout_alignBottom="@+id/radio_chechshock"
+            android:layout_toRightOf="@+id/txt_queryparamtitle"
+            android:text="@string/text_ver" />
+
+        <!-- 
+        <CheckBox
+            android:id="@+id/checkBoxTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_lang"
+            android:layout_toRightOf="@+id/group_lang"
+            android:text="@string/checkTest" />
+         -->
+    </RelativeLayout>
+
+</ScrollView>

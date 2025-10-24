@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="6dp" >
+
+    <TextView
+        android:id="@+id/txt_rfid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:singleLine="false"
+        android:text="Large"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff00ff" />
+
+    <TextView
+        android:id="@+id/txt_no_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_rfid"
+        android:layout_marginRight="5dp"
+        android:text="@string/count_lable" />
+
+    <TextView
+        android:id="@+id/txt_count_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_no_title"
+        android:layout_alignBottom="@+id/txt_no_title"
+        android:layout_toRightOf="@+id/txt_no_title"
+        android:text="0" />
+
+</RelativeLayout>

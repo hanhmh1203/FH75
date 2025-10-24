@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 34
+    
+    defaultConfig {
+        applicationId "com.vanch.vhxdemo"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 18
+        versionName "1.0.18"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    namespace 'com.vanch.vhxdemo'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('libs/org.apache.http.legacy.jar')
+}

@@ -1,0 +1,310 @@
+[
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_tab_bg.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/tab_bg.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_edittext_background.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/edittext_background.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_bg_tab_normal.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/bg_tab_normal.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_access.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/access.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_bg_btn_normal.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/bg_btn_normal.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xhdpi_ic_bluetooth_connected.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xhdpi/ic_bluetooth_connected.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_inventory.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/inventory.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-ldpi_ic_bluetooth_connected.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-ldpi/ic_bluetooth_connected.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_testtab.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/testtab.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_stop_press.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/stop_press.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xhdpi_ic_off.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xhdpi/ic_off.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/menu_main.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/menu/main.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_config.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/config.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_device_list_item.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/device_list_item.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_device_list_item_alreadymatches.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/device_list_item_alreadymatches.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xhdpi_ic_bluetooth.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xhdpi/ic_bluetooth.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-mdpi_light_off.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-mdpi/light_off.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_stop_btn_press.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/stop_btn_press.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_inventory_btn_press.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/inventory_btn_press.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-ldpi_ic_bluetooth.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-ldpi/ic_bluetooth.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xhdpi_ic_bluetooth_search.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xhdpi/ic_bluetooth_search.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/xml_pref_general.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/xml/pref_general.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/xml_chinese.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/xml/chinese.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_fff.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/fff.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_access_location.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/access_location.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-mdpi_ic_bluetooth_connected.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-mdpi/ic_bluetooth_connected.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-mdpi_ic_bluetooth.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-mdpi/ic_bluetooth.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_inventory_press.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/inventory_press.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_stop_pressed.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/stop_pressed.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_expand.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_expand.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_bg_edittext_normal.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/bg_edittext_normal.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_connected.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/connected.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_spinner_selector.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/spinner_selector.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_radio_checked.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_radio_checked.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_power.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/power.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-ldpi_ic_bluetooth_search.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-ldpi/ic_bluetooth_search.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_bluetooth_search.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_bluetooth_search.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_input_bar_bg.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/input_bar_bg.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_disconnected.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/disconnected.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_btn_press.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_btn_press.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_radio_select.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_radio_select.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_color_tab_selected.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/color_tab_selected.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-mdpi_bg_input.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-mdpi/bg_input.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_bg_edittext_disable.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/bg_edittext_disable.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/xml_pref_notification.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/xml/pref_notification.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_btn.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_btn.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/xml_config.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/xml/config.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_inventory_pressed.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/inventory_pressed.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_radio_unchecked.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_radio_unchecked.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/xml_pref_data_sync.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/xml/pref_data_sync.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-mdpi_light_on.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-mdpi/light_on.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_link.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/link.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_flash_off.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_flash_off.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_bg_btn.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/bg_btn.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_radio_selected.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/radio_selected.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_access_data.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/access_data.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xhdpi_ic_unnormal.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xhdpi/ic_unnormal.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-xhdpi_ic_on.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-xhdpi/ic_on.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_tb.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/tb.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_status.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/status.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_bluetooth.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_bluetooth.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/xml_english.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/xml/english.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_activity_main.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/activity_main.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_bg_edittext.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/bg_edittext.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_txt_bg.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/txt_bg.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_bg_btn_press.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/bg_btn_press.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_ic_bluetooth_connected.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/ic_bluetooth_connected.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/layout-normal-hdpi_inventory_item_list.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/layout-normal-hdpi/inventory_item_list.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_btn_selector.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/btn_selector.xml"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_acm_inputbox.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/acm_inputbox.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_input.9.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/input.9.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable-hdpi_btn.png.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable-hdpi/btn.png"
+    },
+    {
+        "merged": "com.vanch.vhxdemo.app-merged_res-22:/drawable_bg_edittext_focused.xml.flat",
+        "source": "com.vanch.vhxdemo.app-main-24:/drawable/bg_edittext_focused.xml"
+    }
+]

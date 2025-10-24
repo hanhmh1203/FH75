@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/status_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_on"
+        android:src="@drawable/ic_unnormal" />
+
+    <TextView
+        android:id="@+id/txt_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/status_on"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/status_on"
+        android:gravity="center"
+        android:text="On"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/status_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/status_on"
+        android:layout_toRightOf="@+id/status_on"
+        android:src="@drawable/ic_unnormal" />
+
+    <ImageView
+        android:id="@+id/status_rx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/status_tx"
+        android:layout_toRightOf="@+id/status_tx"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_unnormal" />
+
+    <TextView
+        android:id="@+id/txt_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_tx"
+        android:layout_alignLeft="@+id/status_tx"
+        android:layout_alignRight="@+id/status_tx"
+        android:gravity="center"
+        android:text="Tx"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/txt_rx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_rx"
+        android:layout_alignLeft="@+id/status_rx"
+        android:layout_alignRight="@+id/status_rx"
+        android:gravity="center"
+        android:text="Rx"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

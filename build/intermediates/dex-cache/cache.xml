@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\VH75Demo\app\libs\org.apache.http.legacy.jar"
+        jumboMode="true"
+        revision="25.0.0"
+        sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
+        <dex dex="E:\VH75Demo\app\build\intermediates\pre-dexed\debug\org.apache.http.legacy_be62a2b020bd00cd08abb8281a32546a580e9425.jar" />
+    </item>
+    <item
+        jar="E:\VH75Demo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\VH75Demo\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_9dec83e4425a05f290092eeda567a7ed75efccbb.jar" />
+    </item>
+    <item
+        jar="E:\VH75Demo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="25.0.0"
+        sha1="e9590de65fc197409cf107fbc44418425964bdd9">
+        <dex dex="E:\VH75Demo\app\build\intermediates\pre-dexed\debug\instant-run_fbbcc09871d2fbd5e9c2ecae2418907bf43851d7.jar" />
+    </item>
+    <item
+        jar="E:\VH75Demo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="25.0.0"
+        sha1="1abb2237480cbdf7cb7c650f904e046e9f5650f2">
+        <dex dex="E:\VH75Demo\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_baef821cf21848fec5510c14d562a70926515586.jar" />
+    </item>
+    <item
+        jar="E:\androidsoftware\adt-bundle-windows-x86-20131030\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="E:\VH75Demo\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_7c111a618787e520b2d976b0a7bdeec2d7434971.jar" />
+    </item>
+    <item
+        jar="E:\VH75Demo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\VH75Demo\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_24cb3d41cd9f4b5c5c27291a6da6fff240801310.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,25 @@
+com.vanch.vhxdemo.app-core-1.9.0-0 /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/res
+com.vanch.vhxdemo.app-media-1.0.0-1 /Users/william/.gradle/caches/transforms-3/1e47e8ee7ed9c6e9ae680c423bb17752/transformed/media-1.0.0/res
+com.vanch.vhxdemo.app-appcompat-1.6.1-2 /Users/william/.gradle/caches/transforms-3/27f944d5dd141e8c451c2518b7151c40/transformed/appcompat-1.6.1/res
+com.vanch.vhxdemo.app-startup-runtime-1.1.1-3 /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/res
+com.vanch.vhxdemo.app-appcompat-resources-1.6.1-4 /Users/william/.gradle/caches/transforms-3/3d61983c6ed78cd9cba6704a170797ab/transformed/appcompat-resources-1.6.1/res
+com.vanch.vhxdemo.app-lifecycle-viewmodel-savedstate-2.5.1-5 /Users/william/.gradle/caches/transforms-3/435385c488cb63738fe8aba042f89433/transformed/lifecycle-viewmodel-savedstate-2.5.1/res
+com.vanch.vhxdemo.app-core-ktx-1.9.0-6 /Users/william/.gradle/caches/transforms-3/475449d9719f6cca2c2ce28387246fd4/transformed/core-ktx-1.9.0/res
+com.vanch.vhxdemo.app-savedstate-1.2.0-7 /Users/william/.gradle/caches/transforms-3/55c4936bfab28b66d8d3d5e855912f2b/transformed/savedstate-1.2.0/res
+com.vanch.vhxdemo.app-emoji2-views-helper-1.2.0-8 /Users/william/.gradle/caches/transforms-3/5793b0da2d2b55d953187b3ec1fcbdae/transformed/emoji2-views-helper-1.2.0/res
+com.vanch.vhxdemo.app-lifecycle-livedata-core-2.5.1-9 /Users/william/.gradle/caches/transforms-3/75b408fea13d0dcc08e4f7a1f9ac7e0a/transformed/lifecycle-livedata-core-2.5.1/res
+com.vanch.vhxdemo.app-annotation-experimental-1.3.0-10 /Users/william/.gradle/caches/transforms-3/764bd21af56b174408c98a6d2ff6f8aa/transformed/annotation-experimental-1.3.0/res
+com.vanch.vhxdemo.app-activity-1.6.0-11 /Users/william/.gradle/caches/transforms-3/98611db8f32b03bd9239b2a9833bb825/transformed/activity-1.6.0/res
+com.vanch.vhxdemo.app-emoji2-1.2.0-12 /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/res
+com.vanch.vhxdemo.app-lifecycle-viewmodel-2.5.1-13 /Users/william/.gradle/caches/transforms-3/b03939f4246e2bcd725426a7c880dcbf/transformed/lifecycle-viewmodel-2.5.1/res
+com.vanch.vhxdemo.app-fragment-1.3.6-14 /Users/william/.gradle/caches/transforms-3/b4d6351b0ffb103a9b1cd1c2bcdce657/transformed/fragment-1.3.6/res
+com.vanch.vhxdemo.app-lifecycle-process-2.4.1-15 /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/res
+com.vanch.vhxdemo.app-coordinatorlayout-1.0.0-16 /Users/william/.gradle/caches/transforms-3/e4047c835766bdf789dc470fb19dd658/transformed/coordinatorlayout-1.0.0/res
+com.vanch.vhxdemo.app-lifecycle-runtime-2.5.1-17 /Users/william/.gradle/caches/transforms-3/fb6ad7aca95c576931c285d006f3af1a/transformed/lifecycle-runtime-2.5.1/res
+com.vanch.vhxdemo.app-pngs-18 /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/build/generated/res/pngs/debug
+com.vanch.vhxdemo.app-resValues-19 /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/build/generated/res/resValues/debug
+com.vanch.vhxdemo.app-packageDebugResources-20 /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.vanch.vhxdemo.app-packageDebugResources-21 /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.vanch.vhxdemo.app-merged_res-22 /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/build/intermediates/merged_res/debug
+com.vanch.vhxdemo.app-debug-23 /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/debug/res
+com.vanch.vhxdemo.app-main-24 /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/res

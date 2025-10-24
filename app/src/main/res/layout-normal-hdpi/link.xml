@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_link"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/scan" 
+            android:background="@drawable/btn_selector"
+            android:drawableLeft="@drawable/ic_bluetooth_search"
+            />
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/disconnect" android:background="@drawable/btn_selector"
+            android:drawableLeft="@drawable/ic_flash_off"/>
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/already_device"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrap"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/already_device"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/useful"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/available"/>
+
+        <ListView
+            android:id="@+id/device_list_use"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/useful"
+            android:layout_centerHorizontal="true" >
+
+    	</ListView>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>
