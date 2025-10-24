@@ -91,10 +91,16 @@ public class VH73Device {
 	// private Context context;
 
 	private Activity activity;
+	private LogManager logManager;
 
 	public VH73Device(Activity activity, BluetoothDevice device) {
 		this.bluetoothDevice = device;
 		this.activity = activity;
+		this.logManager = LogManager.getInstance(activity);
+		
+		// Bắt đầu phiên log mới khi tạo device
+		logManager.startNewSession();
+		logManager.logInfo("VH73Device created for: " + device.getName() + " (" + device.getAddress() + ")");
 	}
 
 	private BluetoothDevice bluetoothDevice;
@@ -330,15 +336,22 @@ public class VH73Device {
 		BluetoothSocket tmpSocket;
 		InputStream tmpIn = null;
 		OutputStream tmpOut = null;
+		
+		logManager.logInfo("Attempting to connect to " + bluetoothDevice.getName() + " (" + bluetoothDevice.getAddress() + ")");
+		
 		try {
 			tmpSocket = bluetoothDevice.createRfcommSocketToServiceRecord(UUID
 					.fromString(SerialPortServiceClass_UUID));
 			tmpSocket.connect();
 			tmpIn = tmpSocket.getInputStream();
 			tmpOut = tmpSocket.getOutputStream();
+			
+			logManager.logBluetoothConnection(bluetoothDevice.getName(), bluetoothDevice.getAddress(), true);
 		} catch (IOException e) {
 			e.printStackTrace();
 			Log.e(TAG, "connect to " + bluetoothDevice.getName() + " failed!");
+			logManager.logBluetoothConnection(bluetoothDevice.getName(), bluetoothDevice.getAddress(), false);
+			logManager.logError("Bluetooth connection failed", e);
 			return false;
 		}
 		socket = tmpSocket;
@@ -367,13 +380,16 @@ public class VH73Device {
 	 * @throws IOException
 	 */
 	public void disconnect() throws IOException {
+		logManager.logBluetoothDisconnection(bluetoothDevice.getName());
 		try {
 			inStream.close();
 			outStream.close();
 			socket.close();
 			setConnected(false);
+			logManager.logInfo("Socket closed and connection status set to false");
 		} catch (IOException e) {
 			e.printStackTrace();
+			logManager.logError("Error during disconnection", e);
 		}
 	}
 
@@ -463,7 +479,10 @@ public class VH73Device {
 	public void sendCommand(byte[] cmd) {
 		try {
 			
-			Log.e("66666666666发送指令：", Bytes2HexString(cmd,cmd.length));			
+			Log.e("66666666666发送指令：", Bytes2HexString(cmd,cmd.length));
+			
+			// Ghi log dữ liệu gửi
+			logManager.logDataSent(cmd, "Command sent to FH75");
 			
 			SimpleDateFormat formatter = new SimpleDateFormat(
 					"yyyy-MM-dd HH:mm:ss.SSS");
@@ -479,9 +498,11 @@ public class VH73Device {
 
 			outStream.write(cmd);
 			EventBus.getDefault().post(new SendCommandSuccess(true));
+			logManager.logInfo("Command sent successfully");
 		} catch (IOException e1) {
 			LOG.info("Write cmdError");
 			e1.printStackTrace();
+			logManager.logError("Failed to send command", e1);
 		}
 
 	}
@@ -1122,9 +1143,14 @@ public class VH73Device {
 			bb.put((byte) read());
 		}
 
-		Log.d(TAG, "get result " + Utility.bytes2HexString(bb.array()));
+		byte[] result = bb.array();
+		Log.d(TAG, "get result " + Utility.bytes2HexString(result));
+		
+		// Ghi log dữ liệu nhận được
+		logManager.logDataReceived(result, "Response received from FH75");
+		
 		EventBus.getDefault().post(new GetCommandResultSuccess(true));
-		return bb.array();
+		return result;
 	}
 
 	/**
@@ -1252,10 +1278,15 @@ public class VH73Device {
 					bb.put((byte) read());
 				}
 
-				Log.d(TAG, "get result " + Utility.bytes2HexString(bb.array())
-						+ " " + VH73Device.getError(bb.array()));
+				byte[] result = bb.array();
+				Log.d(TAG, "get result " + Utility.bytes2HexString(result)
+						+ " " + VH73Device.getError(result));
+				
+				// Ghi log dữ liệu nhận được với timeout
+				logManager.logDataReceived(result, "Response received from FH75 (with timeout)");
+				
 				EventBus.getDefault().post(new GetCommandResultSuccess(true));
-				return bb.array();
+				return result;
 			}
 		} else {
 			// Calendar CD = Calendar.getInstance();
@@ -1438,14 +1469,19 @@ public class VH73Device {
 						bb.put((byte) buffer[i + 2]);
 					}
 
+					byte[] result = bb.array();
 					strData = "get result "
-							+ Utility.bytes2HexString(bb.array()) + " "
-							+ VH73Device.getError(bb.array());
+							+ Utility.bytes2HexString(result) + " "
+							+ VH73Device.getError(result);
 					wq_UdpSendData(strData + "\r\n");
 					Log.d(TAG, strData);
+					
+					// Ghi log dữ liệu nhận được từ buffer
+					logManager.logDataReceived(result, "Response received from FH75 (buffer mode)");
+					
 					EventBus.getDefault().post(
 							new GetCommandResultSuccess(true));
-					return bb.array();
+					return result;
 				}
 
 				strData = "Get Error!!!";

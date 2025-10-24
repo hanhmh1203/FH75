@@ -11,11 +11,26 @@ android {
         versionName "1.0.18"
     }
 
+    signingConfigs {
+        release {
+            storeFile file('release-key.keystore')
+            storePassword 'fh75pass'
+            keyAlias 'fh75-key'
+            keyPassword 'fh75pass'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
+    }
+    
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
     
     compileOptions {

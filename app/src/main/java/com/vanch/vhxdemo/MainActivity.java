@@ -70,6 +70,12 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
 		lang = readLangConfig();
+		
+		// Khởi tạo LogManager và ghi thông tin thiết bị ngay khi app start
+		LogManager logManager = LogManager.getInstance(this);
+		logManager.startNewSession();
+		logManager.logInfo("MainActivity onCreate - App launched");
+		
     setContentView(R.layout.activity_main);
     mTabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);
     mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);

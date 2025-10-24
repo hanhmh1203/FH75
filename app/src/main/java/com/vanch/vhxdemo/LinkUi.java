@@ -78,6 +78,7 @@ public class LinkUi extends Fragment {
 	protected static final int DISCONNECT = 4;
 	
 	public VH73Device vh73Device;
+	private LogManager logManager;
 	
 	//other widgets
 	
@@ -122,6 +123,10 @@ public class LinkUi extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState) {
 		me = this;
+		
+		// Khởi tạo LogManager
+		logManager = LogManager.getInstance(getContext());
+		
 		View view = inflater.inflate(R.layout.link, null);
 		useful = (TextView) view.findViewById(R.id.useful);
 		btnScan = (Button) view.findViewById(R.id.btn_scan);
@@ -272,9 +277,25 @@ public class LinkUi extends Fragment {
 		}
 		
 		Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+		logManager.logInfo("Found " + pairedDevices.size() + " paired devices");
+		
 		if (pairedDevices.size() > 0) {
+			int count = 0;
 			for (BluetoothDevice device : pairedDevices) {
+				count++;
 				Log.i(TAG, "found paired device " + device.getName() + " "+device.toString());
+				
+				// Log chi tiết paired device
+				String deviceName = device.getName() != null ? device.getName() : "Unknown Device";
+				String deviceAddress = device.getAddress();
+				int deviceType = device.getType();
+				String typeStr = getDeviceTypeString(deviceType);
+				
+				logManager.logInfo("[PAIRED_DEVICE] #" + count + " - Name: " + deviceName + 
+						" | Address: " + deviceAddress + 
+						" | Type: " + typeStr + 
+						" | Status: Already Paired");
+				
 				foundDevices.add(device);
 				EventBus.getDefault().post(new BTDeviceFoundEvent(device));
 				String lastDeviceMac = ConfigUI.getConfigLastConnect(getActivity());
@@ -282,6 +303,7 @@ public class LinkUi extends Fragment {
 				//last connected device
 				if(lastDeviceMac.equals(device.getAddress()) && currentDevice==null) {
 					Log.d(TAG, "will connect to last device " + lastDeviceMac);
+					logManager.logInfo("[AUTO_CONNECT] Attempting to reconnect to last connected device: " + deviceName);
 					currentDevice = new VH73Device(getActivity(), device);
 					new Thread() {
 						public void run() {
@@ -357,6 +379,24 @@ public class LinkUi extends Fragment {
 
 		private void discoveryEnded() {
 			Log.i(TAG, "finish discovery");
+			logManager.logInfo("Bluetooth scan completed - found " + foundDevices.size() + " devices");
+			
+			// Log tất cả devices được tìm thấy
+			for (int i = 0; i < foundDevices.size(); i++) {
+				BluetoothDevice device = foundDevices.get(i);
+				String deviceName = device.getName() != null ? device.getName() : "Unknown Device";
+				String deviceAddress = device.getAddress();
+				int deviceType = device.getType();
+				String typeStr = getDeviceTypeString(deviceType);
+				int bondState = device.getBondState();
+				String bondStr = getBondStateString(bondState);
+				
+				logManager.logInfo("[DEVICE_FOUND] #" + (i+1) + " - Name: " + deviceName + 
+						" | Address: " + deviceAddress + 
+						" | Type: " + typeStr + 
+						" | Bond: " + bondStr);
+			}
+			
 			progressDialog.setMessage(Strings.getString(R.string.msg_scan_over));
 			progressDialog.dismiss();
 			refreshList();
@@ -364,6 +404,7 @@ public class LinkUi extends Fragment {
 
 		private void discoveryStarted() {
 			Log.i(TAG, "start discovery");
+			logManager.logInfo("Bluetooth scan started - searching for devices...");
 			progressDialog.setMessage(Strings.getString(R.string.msg_scaning));
 			progressDialog.show();
 			foundDevices = new ArrayList<BluetoothDevice>();
@@ -373,6 +414,22 @@ public class LinkUi extends Fragment {
 		private void deviceFound(BluetoothDevice device) {
 			if (!hasFoundDevice(device)) {
 				Log.i(TAG, "Device " + device.getName() +" found " + device.toString());
+				
+				// Ghi log chi tiết device vừa tìm thấy
+				String deviceName = device.getName() != null ? device.getName() : "Unknown Device";
+				String deviceAddress = device.getAddress();
+				int deviceType = device.getType();
+				String typeStr = getDeviceTypeString(deviceType);
+				int bondState = device.getBondState();
+				String bondStr = getBondStateString(bondState);
+				
+				logManager.logInfo("[BLUETOOTH_DISCOVERY] New device discovered:");
+				logManager.logInfo("  - Name: " + deviceName);
+				logManager.logInfo("  - Address: " + deviceAddress);
+				logManager.logInfo("  - Type: " + typeStr);
+				logManager.logInfo("  - Bond State: " + bondStr);
+				logManager.logInfo("  - RSSI: " + (device.getBluetoothClass() != null ? device.getBluetoothClass().toString() : "N/A"));
+				
 				foundDevices.add(device);
 				EventBus.getDefault().post(new BTDeviceFoundEvent(device));
 			}
@@ -388,6 +445,11 @@ public class LinkUi extends Fragment {
 	}
 	
 	private void connect(final BluetoothDevice device) {
+		// Log khi user chọn device để kết nối
+		String deviceName = device.getName() != null ? device.getName() : "Unknown Device";
+		String deviceAddress = device.getAddress();
+		logManager.logInfo("[USER_ACTION] User selected device to connect: " + deviceName + " (" + deviceAddress + ")");
+		
 		handle.sendEmptyMessage(CONNECTING);
 		new Thread() {
 		
@@ -685,6 +747,38 @@ public class LinkUi extends Fragment {
 				// Some permissions were denied
 				Toast.makeText(getContext(), "Bluetooth permissions are required for this app to work properly", Toast.LENGTH_LONG).show();
 			}
+		}
+	}
+	
+	/**
+	 * Helper method để convert device type thành string
+	 */
+	private String getDeviceTypeString(int deviceType) {
+		switch (deviceType) {
+			case BluetoothDevice.DEVICE_TYPE_CLASSIC:
+				return "Classic";
+			case BluetoothDevice.DEVICE_TYPE_LE:
+				return "Low Energy";
+			case BluetoothDevice.DEVICE_TYPE_DUAL:
+				return "Dual Mode";
+			case BluetoothDevice.DEVICE_TYPE_UNKNOWN:
+			default:
+				return "Unknown";
+		}
+	}
+	
+	/**
+	 * Helper method để convert bond state thành string
+	 */
+	private String getBondStateString(int bondState) {
+		switch (bondState) {
+			case BluetoothDevice.BOND_BONDED:
+				return "Paired";
+			case BluetoothDevice.BOND_BONDING:
+				return "Pairing";
+			case BluetoothDevice.BOND_NONE:
+			default:
+				return "Not Paired";
 		}
 	}
 }

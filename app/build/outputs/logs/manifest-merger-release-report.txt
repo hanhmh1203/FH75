@@ -1,0 +1,316 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:2:1-65:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/william/.gradle/caches/transforms-3/3d61983c6ed78cd9cba6704a170797ab/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/william/.gradle/caches/transforms-3/27f944d5dd141e8c451c2518b7151c40/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/william/.gradle/caches/transforms-3/b0569edf4a1c2e6a1f8803dad311f2e4/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/william/.gradle/caches/transforms-3/b4d6351b0ffb103a9b1cd1c2bcdce657/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] /Users/william/.gradle/caches/transforms-3/98611db8f32b03bd9239b2a9833bb825/transformed/activity-1.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/william/.gradle/caches/transforms-3/41a39c0105158e0c9ca87c278783722f/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/9d62dc0790c9ffb9dc1e436a76160b2b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/william/.gradle/caches/transforms-3/5793b0da2d2b55d953187b3ec1fcbdae/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.media:media:1.0.0] /Users/william/.gradle/caches/transforms-3/1e47e8ee7ed9c6e9ae680c423bb17752/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/william/.gradle/caches/transforms-3/cc6062d93917b2769f16c12e5fe73b62/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/william/.gradle/caches/transforms-3/6f4d778fed03992390cb746343713da2/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/william/.gradle/caches/transforms-3/565351ad2c306bece7158d81ebfc0f75/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/william/.gradle/caches/transforms-3/a3ea855d6e0b829df442ae83b9b8108c/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/william/.gradle/caches/transforms-3/b03939f4246e2bcd725426a7c880dcbf/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/william/.gradle/caches/transforms-3/435385c488cb63738fe8aba042f89433/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/william/.gradle/caches/transforms-3/475449d9719f6cca2c2ce28387246fd4/transformed/core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/william/.gradle/caches/transforms-3/c83f95e6a7172ab20792227ee195e8bf/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/e4047c835766bdf789dc470fb19dd658/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/william/.gradle/caches/transforms-3/4638255943dddbef2cd40874d5cfc67f/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/william/.gradle/caches/transforms-3/1a0da1b41016c4ae903578e870594298/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/12c5839ca638a34105580e5cb565ccfa/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/william/.gradle/caches/transforms-3/de45e76d1db1414784dca43b2f0d05f2/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/william/.gradle/caches/transforms-3/dc0516c85ef70f445850a1dacd19d06a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/william/.gradle/caches/transforms-3/fb6ad7aca95c576931c285d006f3af1a/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/william/.gradle/caches/transforms-3/55c4936bfab28b66d8d3d5e855912f2b/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/william/.gradle/caches/transforms-3/20321e8dcca55ada35e3ee2d579c82b3/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/william/.gradle/caches/transforms-3/78c62fc5998d1bed28640af0bce4b2e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/william/.gradle/caches/transforms-3/16e3506697fd534614cbbd4c04c60187/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/william/.gradle/caches/transforms-3/75b408fea13d0dcc08e4f7a1f9ac7e0a/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/william/.gradle/caches/transforms-3/253e507fc446b9696276bad0f8aac05d/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/william/.gradle/caches/transforms-3/d186d5bc5a2c011e298147b808ce8a5a/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/william/.gradle/caches/transforms-3/adeee3dc52fe82cc41bfb6cd4f5789e2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/william/.gradle/caches/transforms-3/9f4d5964dee8aeae0c6fdd9d7ece3e51/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/william/.gradle/caches/transforms-3/dcb99d9e0ed4bd13553d2eef8b044143/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/william/.gradle/caches/transforms-3/764bd21af56b174408c98a6d2ff6f8aa/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:4:5-33
+		INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:3:5-29
+		INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:6:5-8:41
+INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:6:5-8:41
+INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/william/.gradle/caches/transforms-3/3d61983c6ed78cd9cba6704a170797ab/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/william/.gradle/caches/transforms-3/3d61983c6ed78cd9cba6704a170797ab/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/william/.gradle/caches/transforms-3/27f944d5dd141e8c451c2518b7151c40/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/william/.gradle/caches/transforms-3/27f944d5dd141e8c451c2518b7151c40/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/william/.gradle/caches/transforms-3/b0569edf4a1c2e6a1f8803dad311f2e4/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/william/.gradle/caches/transforms-3/b0569edf4a1c2e6a1f8803dad311f2e4/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/william/.gradle/caches/transforms-3/b4d6351b0ffb103a9b1cd1c2bcdce657/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/william/.gradle/caches/transforms-3/b4d6351b0ffb103a9b1cd1c2bcdce657/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] /Users/william/.gradle/caches/transforms-3/98611db8f32b03bd9239b2a9833bb825/transformed/activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] /Users/william/.gradle/caches/transforms-3/98611db8f32b03bd9239b2a9833bb825/transformed/activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/william/.gradle/caches/transforms-3/41a39c0105158e0c9ca87c278783722f/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/william/.gradle/caches/transforms-3/41a39c0105158e0c9ca87c278783722f/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/9d62dc0790c9ffb9dc1e436a76160b2b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/9d62dc0790c9ffb9dc1e436a76160b2b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/william/.gradle/caches/transforms-3/5793b0da2d2b55d953187b3ec1fcbdae/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/william/.gradle/caches/transforms-3/5793b0da2d2b55d953187b3ec1fcbdae/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/william/.gradle/caches/transforms-3/1e47e8ee7ed9c6e9ae680c423bb17752/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/william/.gradle/caches/transforms-3/1e47e8ee7ed9c6e9ae680c423bb17752/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/william/.gradle/caches/transforms-3/cc6062d93917b2769f16c12e5fe73b62/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/william/.gradle/caches/transforms-3/cc6062d93917b2769f16c12e5fe73b62/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/william/.gradle/caches/transforms-3/6f4d778fed03992390cb746343713da2/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/william/.gradle/caches/transforms-3/6f4d778fed03992390cb746343713da2/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/william/.gradle/caches/transforms-3/565351ad2c306bece7158d81ebfc0f75/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/william/.gradle/caches/transforms-3/565351ad2c306bece7158d81ebfc0f75/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/william/.gradle/caches/transforms-3/a3ea855d6e0b829df442ae83b9b8108c/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/william/.gradle/caches/transforms-3/a3ea855d6e0b829df442ae83b9b8108c/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/william/.gradle/caches/transforms-3/b03939f4246e2bcd725426a7c880dcbf/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/william/.gradle/caches/transforms-3/b03939f4246e2bcd725426a7c880dcbf/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/william/.gradle/caches/transforms-3/435385c488cb63738fe8aba042f89433/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/william/.gradle/caches/transforms-3/435385c488cb63738fe8aba042f89433/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/william/.gradle/caches/transforms-3/475449d9719f6cca2c2ce28387246fd4/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/william/.gradle/caches/transforms-3/475449d9719f6cca2c2ce28387246fd4/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/william/.gradle/caches/transforms-3/c83f95e6a7172ab20792227ee195e8bf/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/william/.gradle/caches/transforms-3/c83f95e6a7172ab20792227ee195e8bf/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/e4047c835766bdf789dc470fb19dd658/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/e4047c835766bdf789dc470fb19dd658/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/william/.gradle/caches/transforms-3/4638255943dddbef2cd40874d5cfc67f/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/william/.gradle/caches/transforms-3/4638255943dddbef2cd40874d5cfc67f/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/william/.gradle/caches/transforms-3/1a0da1b41016c4ae903578e870594298/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/william/.gradle/caches/transforms-3/1a0da1b41016c4ae903578e870594298/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/12c5839ca638a34105580e5cb565ccfa/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/william/.gradle/caches/transforms-3/12c5839ca638a34105580e5cb565ccfa/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/william/.gradle/caches/transforms-3/de45e76d1db1414784dca43b2f0d05f2/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/william/.gradle/caches/transforms-3/de45e76d1db1414784dca43b2f0d05f2/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/william/.gradle/caches/transforms-3/dc0516c85ef70f445850a1dacd19d06a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/william/.gradle/caches/transforms-3/dc0516c85ef70f445850a1dacd19d06a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/william/.gradle/caches/transforms-3/fb6ad7aca95c576931c285d006f3af1a/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/william/.gradle/caches/transforms-3/fb6ad7aca95c576931c285d006f3af1a/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/william/.gradle/caches/transforms-3/55c4936bfab28b66d8d3d5e855912f2b/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/william/.gradle/caches/transforms-3/55c4936bfab28b66d8d3d5e855912f2b/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/william/.gradle/caches/transforms-3/20321e8dcca55ada35e3ee2d579c82b3/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/william/.gradle/caches/transforms-3/20321e8dcca55ada35e3ee2d579c82b3/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/william/.gradle/caches/transforms-3/78c62fc5998d1bed28640af0bce4b2e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/william/.gradle/caches/transforms-3/78c62fc5998d1bed28640af0bce4b2e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/william/.gradle/caches/transforms-3/16e3506697fd534614cbbd4c04c60187/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/william/.gradle/caches/transforms-3/16e3506697fd534614cbbd4c04c60187/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/william/.gradle/caches/transforms-3/75b408fea13d0dcc08e4f7a1f9ac7e0a/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/william/.gradle/caches/transforms-3/75b408fea13d0dcc08e4f7a1f9ac7e0a/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/william/.gradle/caches/transforms-3/253e507fc446b9696276bad0f8aac05d/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/william/.gradle/caches/transforms-3/253e507fc446b9696276bad0f8aac05d/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/william/.gradle/caches/transforms-3/d186d5bc5a2c011e298147b808ce8a5a/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/william/.gradle/caches/transforms-3/d186d5bc5a2c011e298147b808ce8a5a/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/william/.gradle/caches/transforms-3/adeee3dc52fe82cc41bfb6cd4f5789e2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/william/.gradle/caches/transforms-3/adeee3dc52fe82cc41bfb6cd4f5789e2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/william/.gradle/caches/transforms-3/9f4d5964dee8aeae0c6fdd9d7ece3e51/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/william/.gradle/caches/transforms-3/9f4d5964dee8aeae0c6fdd9d7ece3e51/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/william/.gradle/caches/transforms-3/dcb99d9e0ed4bd13553d2eef8b044143/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/william/.gradle/caches/transforms-3/dcb99d9e0ed4bd13553d2eef8b044143/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/william/.gradle/caches/transforms-3/764bd21af56b174408c98a6d2ff6f8aa/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/william/.gradle/caches/transforms-3/764bd21af56b174408c98a6d2ff6f8aa/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:8:9-38
+		INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:7:9-35
+		INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:10:5-68
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:10:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:11:5-74
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:11:22-71
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:14:22-73
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:15:5-73
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:15:22-70
+uses-permission#android.permission.BLUETOOTH_ADVERTISE
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:16:5-78
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:16:22-75
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:19:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:20:22-78
+supports-screens
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:22:5-24:37
+	android:resizeable
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:24:9-34
+	android:anyDensity
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:23:9-34
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:26:5-66
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:26:22-63
+uses-permission#android.permission.READ_PROFILE
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:27:5-71
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:27:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:28:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:29:22-64
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:30:5-75
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:30:22-72
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:31:5-83
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:31:22-81
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:34:5-82
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:34:22-79
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:37:5-38:38
+	android:maxSdkVersion
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:38:9-35
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:37:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:39:5-40:38
+	android:maxSdkVersion
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:40:9-35
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:39:22-78
+application
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:42:5-63:19
+INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:42:5-63:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/william/.gradle/caches/transforms-3/78c62fc5998d1bed28640af0bce4b2e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/william/.gradle/caches/transforms-3/78c62fc5998d1bed28640af0bce4b2e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml
+	android:requestLegacyExternalStorage
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:47:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:45:9-41
+	android:icon
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:44:9-45
+	android:allowBackup
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:43:9-35
+	android:theme
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:46:9-40
+activity#com.vanch.vhxdemo.MainActivity
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:48:9-57:20
+	android:label
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:50:13-45
+	android:exported
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:51:13-36
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:49:13-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:52:13-56:29
+action#android.intent.action.MAIN
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:53:17-69
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:53:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:55:17-77
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:55:27-74
+activity#com.vanch.vhxdemo.ConfigPreference
+ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:58:9-62:20
+	android:label
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:60:13-69
+	android:exported
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:61:13-37
+	android:name
+		ADDED from /Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:59:13-62
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/william/.gradle/caches/transforms-3/36bbd0e1a22643c62452142bd1e3da0f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+permission#com.vanch.vhxdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+uses-permission#com.vanch.vhxdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
