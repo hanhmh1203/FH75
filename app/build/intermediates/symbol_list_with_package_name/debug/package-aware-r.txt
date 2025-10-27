@@ -777,6 +777,7 @@ id beginning
 id blocking
 id bottom
 id btn_access
+id btn_check_product
 id btn_disconnect
 id btn_inventory
 id btn_save
@@ -808,6 +809,7 @@ id edit_data
 id edit_data_len
 id edit_epc
 id edit_passwd
+id edit_product_code
 id edit_query
 id edit_start
 id edit_timeout
@@ -834,6 +836,7 @@ id include2
 id include5
 id info
 id italic
+id layout_product_check
 id left
 id line1
 id line3

@@ -37,6 +37,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -84,8 +85,9 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 	public static InventoryUI me;
 
 	ListView listView;
-	Button btnInventory, btnStop, btnSave, btnSubmit;
+	Button btnInventory, btnStop, btnSave, btnSubmit, btnCheckProduct;
 	TextView txtCount;
+	EditText editProductCode;
 	ListAdapter adapter;
 	List<Epc> epcs = new ArrayList<Epc>();
 	Map<String, Integer> epc2num = new ConcurrentHashMap<String, Integer>();
@@ -205,6 +207,15 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 			public void onClick(View v) {
 				// TODO: Implement API submit functionality
 				submitInventoryToServer();
+			}
+		});
+		
+		editProductCode = (EditText) view.findViewById(R.id.edit_product_code);
+		btnCheckProduct = (Button) view.findViewById(R.id.btn_check_product);
+		btnCheckProduct.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				checkProductCode();
 			}
 		});
 		
@@ -743,5 +754,34 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 		// 1. Convert epc2num to JSON format
 		// 2. Make HTTP POST request to server
 		// 3. Handle response and show success/error message
+	}
+	
+	/**
+	 * Check if entered product code exists in scanned inventory
+	 */
+	private void checkProductCode() {
+		String productCode = editProductCode.getText().toString().trim();
+		
+		if (productCode.isEmpty()) {
+			Toast.makeText(getActivity(), "Please enter a product code", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		
+		// Convert input to uppercase to match EPC format
+		productCode = productCode.toUpperCase();
+		
+		if (epc2num.containsKey(productCode)) {
+			int count = epc2num.get(productCode);
+			Toast.makeText(getActivity(), 
+				String.format("Product found! Count: %d", count), 
+				Toast.LENGTH_LONG).show();
+		} else {
+			Toast.makeText(getActivity(), 
+				"Product code not found in inventory", 
+				Toast.LENGTH_LONG).show();
+		}
+		
+		// Clear the input field after check
+		editProductCode.setText("");
 	}
 }

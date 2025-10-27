@@ -66,10 +66,12 @@ id already_device
 id already_device_mac
 id already_device_name
 id btn_access
+id btn_check_product
 id btn_disconnect
 id btn_inventory
 id btn_save
 id btn_scan
+id btn_submit
 id checkBox_data
 id data1
 id device_list_use
@@ -77,6 +79,7 @@ id edit_data
 id edit_data_len
 id edit_epc
 id edit_passwd
+id edit_product_code
 id edit_start
 id edit_timeout
 id group_lang
@@ -84,6 +87,7 @@ id ic_connect_status
 id include1
 id include2
 id include5
+id layout_product_check
 id list_rfid
 id radioGroup_op
 id radio_autolink

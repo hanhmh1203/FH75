@@ -26,9 +26,9 @@
     <ListView
         android:id="@+id/list_rfid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/include2"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_product_check"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true" >
     </ListView>
 
@@ -36,8 +36,9 @@
         android:id="@+id/btn_inventory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/list_rfid"
+        android:layout_below="@+id/include2"
         android:layout_toRightOf="@+id/include2"
+        android:layout_marginTop="5dp"
         android:background="@drawable/inventory_btn_press"
         android:paddingBottom="10dp"
         android:paddingLeft="25dp"
@@ -51,13 +52,68 @@
         android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_alignTop="@+id/btn_inventory"
         android:layout_toRightOf="@+id/btn_inventory"
+        android:layout_marginLeft="5dp"
         android:background="@drawable/inventory_btn_press"
         android:paddingBottom="10dp"
-        android:layout_marginTop="3dp"
         android:text="@string/save"
         android:textSize="14sp"
         android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_inventory"
+        android:layout_toRightOf="@+id/btn_save"
+        android:background="@drawable/inventory_btn_press"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Submit"
+        android:textSize="14sp"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/layout_product_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_inventory"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Code:"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/edit_product_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter product code to check"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:id="@+id/btn_check_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/inventory_btn_press"
+            android:textColor="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
 
 </RelativeLayout>
