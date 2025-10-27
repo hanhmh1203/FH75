@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+            <CheckBoxPreference
+            android:enabled="true"
+            android:key="key_auto_link" />
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="key_skip_name" />
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="key_detect_sound" />
+        <CheckBoxPreference android:key="key_singal_tag" android:enabled="true"/>
+        <CheckBoxPreference android:key="key_continue" android:enabled="true" android:selectable="false"/><PreferenceCategory android:title="@string/session">
+            <ListPreference android:title="@string/session" android:entryValues="@array/sessionKV" android:entries="@array/sessionKV"/>
+            <ListPreference android:title="AB" android:entryValues="@array/AB" android:entries="@array/AB"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Q">
+            <ListPreference android:entryValues="@array/QV" android:entries="@array/Q"/>
+        </PreferenceCategory>
+        
+        <PreferenceCategory android:title="@string/timeout">
+            <EditTextPreference android:key="key_timeout" android:title="@string/timeout" android:defaultValue="0"/>
+        </PreferenceCategory>
+    <Preference android:layout="@layout/power"/>
+
+</PreferenceScreen>

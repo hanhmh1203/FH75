@@ -84,7 +84,7 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 	public static InventoryUI me;
 
 	ListView listView;
-	Button btnInventory, btnStop,btnSave;
+	Button btnInventory, btnStop, btnSave, btnSubmit;
 	TextView txtCount;
 	ListAdapter adapter;
 	List<Epc> epcs = new ArrayList<Epc>();
@@ -196,6 +196,15 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 							Strings.getString(R.string.msg_device_not_connect))
 							.show();
 				}
+			}
+		});
+		
+		btnSubmit = (Button) view.findViewById(R.id.btn_submit);
+		btnSubmit.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO: Implement API submit functionality
+				submitInventoryToServer();
 			}
 		});
 		
@@ -713,5 +722,26 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 				}.start();
 			}
 		}.start();
+	}
+	
+	/**
+	 * Submit inventory data to server
+	 * TODO: Implement API call functionality
+	 */
+	private void submitInventoryToServer() {
+		if (epc2num.isEmpty()) {
+			Toast.makeText(getActivity(), "No inventory data to submit", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		
+		// TODO: Implement API call to submit inventory data
+		// Data available: epc2num (Map<String, Integer>) contains EPC codes and counts
+		
+		Toast.makeText(getActivity(), "Submit functionality - To be implemented", Toast.LENGTH_SHORT).show();
+		
+		// Placeholder for future API implementation:
+		// 1. Convert epc2num to JSON format
+		// 2. Make HTTP POST request to server
+		// 3. Handle response and show success/error message
 	}
 }

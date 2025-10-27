@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="available">可用设备</string>
+    <string name="app_name">VH75Demo</string>
+    <string name="action_settings">设置</string>
+    <string name="btn_access">访问</string>
+    <string name="label_passwd">密码</string>
+    <string name="read">读</string>
+    <string name="write">写</string>
+    <string name="lock">锁</string>
+    <string name="kill">杀掉</string>
+    <string name="str_data">数据</string>
+    <string name="data_hint">数据</string>
+    <string name="title_access_location">访问位置</string>
+    <string name="detect">检测</string>
+
+    <string-array name="epcs">
+        <item>Password</item>
+        <item>EPC</item>
+        
+        <item>TID</item>
+        <item>User</item>
+    </string-array>
+
+    <string name="hint_addr_start">Addr</string>
+    <string name="hint_data_len">Len</string>
+    <string name="status">状态</string>
+    <string name="mask">掩码</string>
+    <string name="scan">扫描</string>
+    <string name="disconnect">断开</string>
+    <string name="dialog_title_alert">警告</string>
+    <string name="inventory">发现</string>
+    <string name="save">保存</string>
+    <string name="count_lable">-数量:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="autolink">自动连接</string>
+    <string name="queryparam">查询参数</string>
+    <string name="session">会话</string>
+    <string name="detectsound">检测声音</string>
+    <string-array name="sessionKV">
+        <item >S0</item>
+        <item >S1</item>
+        <item >S2</item>
+        <item >S3</item>
+    </string-array>
+    <string-array name="Q">
+        <item >~1</item>
+        <item >~2</item>
+        <item >~4</item>
+        <item >~8</item>
+        <item >~16</item>
+        <item >~32</item>
+        <item >~64</item>
+        <item >~128</item>
+    </string-array>
+    <string-array name="QV">
+        <item >1</item>
+        <item >2</item>
+        <item >4</item>
+        <item >8</item>
+        <item >16</item>
+        <item >32</item>
+        <item >64</item>
+        <item >128</item>
+    </string-array>
+    <string-array name="AB">
+        <item >AB</item>
+        <item >A</item>
+        <item >B</item>
+    </string-array>
+        <string name="timeout">超时(ms)</string>
+        <string name="skipname">忽略相同</string>
+        <string name="singletag">单标签</string>
+        <string name="stop">停止</string>
+        <string name="checkshock">检查震动</string>
+        <string name="txpower">Tx 功率</string>
+        <string name="mac_title">mac</string>
+        <string name="softversion_title">软件版本</string>
+        <string name="hdversion">硬件版本</string>
+        <string name="content_description_detect_status">检测状态</string>
+        <string name="txt_Q_title">Q</string>
+        <string name="radio_lang_eng">英语</string>
+        <string name="radio_lang_chinese">中文</string>
+        <string name="connected">已连接</string>
+        <string name="notconnected">未连接</string>
+        <string name="link_tab">链接</string>
+        <string name="access_tab">访问</string>
+        <string name="inventory_tab">发现</string>
+        <string name="config_tab">配置</string>
+
+        
+             <!-- message  -->
+        <string name="msg_bt_not_support">Bluetooth not supported on this deviece</string>
+        <string name="msg_ok">确定</string>
+        <string name="msg_fail_to_connect">连接到设备失败 </string>
+        <string name="msg_paring">配对中……</string>
+        <string name="msg_paired">配对成功……</string>
+        <string name="msg_scan_over">扫面结束...</string>
+        <string name="msg_scaning">扫描中...</string>
+        <string name="msg_read_config_fail">读取参数失败</string>
+        <string name="msg_waring">警告</string>
+        <string name="msg_already_connect">设备已经连接...</string>
+        <string name="msg_bt_not_enable">蓝牙未启用，请启用蓝牙</string>
+        <string name="msg_connected">已连接...</string>
+        <string name="msg_connecting">连接中...</string>
+        <string name="msg_connect_fail">连接失败!</string>
+        <string name="msg_inventory_stoping">停止中......</string>
+        <string name="msg_device_not_connect">没有已连接的设备!</string>
+        <string name="msg_command_fail">执行命令失败!</string>
+        <string name="msg_timeout">超时!!!</string>
+        <string name="msg_data_must_be_hex">Data必须为16进制数...</string>
+        <string name="msg_passwd_must_be_hex">密码必须未16进制数...</string>
+        <string name="msg_kill_succ">KillTag成功...</string>
+        <string name="msg_kill_fail">KillTag失败...</string>
+        <string name="msg_kill_timeout">KillTag超时...</string>
+        <string name="msg_epc_must_larger_zero">EPC长度必须大于0</string>
+        <string name="msg_passwd_len_must_eight">密码长度必须为8位16进制数</string>
+        <string name="msg_erase_ok">EraseBlock成功...</string>
+        <string name="msg_erase_fail">EraseBlock失败...</string>
+        <string name="msg_erase_timeout">EraseBlock超时...</string>
+        <string name="msg_addr_must_be_hex">Addr必须为正16进制数...</string>
+        <string name="msg_len_must_be_hex">Len必须为正16进制数...</string>
+        <string name="msg_blocklock_succ">BlockLock成功...</string>
+        <string name="msg_blocklock_fail">BlockLock失败...</string>
+        <string name="msg_blocklock_timeout">BlockLock超时...</string>
+        
+        <string name="msg_wirtewordblock_succ">WriteWordBlock成功...</string>
+        <string name="msg_wirtewordblock_fail">WriteWordBlock失败...</string>
+        <string name="msg_wirtewordblock_timeout">WriteWordBlock超时...</string>
+        <string name="msg_ReadWordBlock_title">ReadWordBlock结果 </string>
+        <string name="msg_ReadWordBlock_timeout">ReadWordBlock超时... </string>
+        
+              <string name="msg_cur_version">当前版本:</string>
+        <string name="msg_find_new_version">,发现新版本:</string>
+        <string name="msg_soft_update">软件升级</string>
+        <string name="msg_update">升级</string>
+        <string name="msg_update_later">以后升级</string>
+        <string name="cancel">取消</string>
+                <string name="msg_check_update_fail">检查新版本失败……</string>
+        <string name="msg_download_apk_fail">下载apk文件失败……</string>
+        <string name="radio_check_update">检查新版本</string>
+        <string name="msg_Exitbox_Title">友情提示...</string>
+        <string name="msg_Exitbox_Context">你确定要退出吗？</string>
+        <string name="msg_Exitbox_BtnOK">确定</string>
+        <string name="msg_Exitbox_BtnCancal">取消</string>
+        <string name="checkTest">测试</string>
+</resources>

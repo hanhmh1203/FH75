@@ -1,0 +1,164 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vanch.vhxdemo"
+4    android:versionCode="18"
+5    android:versionName="1.0.18" >
+6
+7    <uses-sdk
+7-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:6:5-8:41
+8        android:minSdkVersion="21"
+8-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:7:9-35
+9        android:targetSdkVersion="34" />
+9-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:8:9-38
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:10:5-68
+11-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:10:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:11:5-74
+12-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:11:22-71
+13
+14    <!-- New Bluetooth permissions for Android 12+ (API 31+) -->
+15    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+15-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:14:5-76
+15-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:14:22-73
+16    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+16-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:15:5-73
+16-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:15:22-70
+17    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+17-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:16:5-78
+17-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:16:22-75
+18
+19    <!-- Location permission is also required for Bluetooth scan on Android 10+ -->
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:19:5-79
+20-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:19:22-76
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:20:5-81
+21-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:20:22-78
+22
+23    <supports-screens
+23-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:22:5-24:37
+24        android:anyDensity="true"
+24-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:23:9-34
+25        android:resizeable="true" />
+25-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:24:9-34
+26
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:26:5-66
+27-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:26:22-63
+28    <uses-permission android:name="android.permission.READ_PROFILE" />
+28-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:27:5-71
+28-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:27:22-68
+29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+29-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:28:5-79
+29-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:28:22-76
+30    <uses-permission android:name="android.permission.INTERNET" />
+30-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:29:5-67
+30-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:29:22-64
+31    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+31-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:30:5-75
+31-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:30:22-72
+32    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+32-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:31:5-83
+32-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:31:22-81
+33
+34    <!-- Storage permissions for Android 11+ (API 30+) -->
+35    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+35-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:34:5-82
+35-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:34:22-79
+36
+37    <!-- Legacy external storage for older Android versions -->
+38    <uses-permission
+38-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:37:5-38:38
+39        android:name="android.permission.READ_EXTERNAL_STORAGE"
+39-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:37:22-77
+40        android:maxSdkVersion="32" />
+40-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:38:9-35
+41    <uses-permission
+41-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:39:5-40:38
+42        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+42-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:39:22-78
+43        android:maxSdkVersion="32" />
+43-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:40:9-35
+44
+45    <permission
+45-->[androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+46        android:name="com.vanch.vhxdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.vanch.vhxdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:42:5-63:19
+52        android:allowBackup="true"
+52-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:43:9-35
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.9.0] /Users/william/.gradle/caches/transforms-3/0b3d22ab099177b3472464321ad2c41c/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:extractNativeLibs="true"
+56        android:icon="@drawable/ic_launcher"
+56-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:44:9-45
+57        android:label="@string/app_name"
+57-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:45:9-41
+58        android:requestLegacyExternalStorage="true"
+58-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:47:9-52
+59        android:theme="@style/AppTheme" >
+59-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:46:9-40
+60        <activity
+60-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:48:9-57:20
+61            android:name="com.vanch.vhxdemo.MainActivity"
+61-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:49:13-58
+62            android:exported="true"
+62-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:51:13-36
+63            android:label="@string/app_name" >
+63-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:50:13-45
+64            <intent-filter>
+64-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:52:13-56:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:53:17-69
+65-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:53:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:55:17-77
+67-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:55:27-74
+68            </intent-filter>
+69        </activity>
+70        <activity
+70-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:58:9-62:20
+71            android:name="com.vanch.vhxdemo.ConfigPreference"
+71-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:59:13-62
+72            android:exported="false"
+72-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:61:13-37
+73            android:label="@string/title_activity_config_freference" >
+73-->/Users/william/Documents/f75/FH-75 handheld reader/SDK/二合一（带保存）android studio版/FH75Demo/app/src/main/AndroidManifest.xml:60:13-69
+74        </activity>
+75
+76        <provider
+76-->[androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+78            android:authorities="com.vanch.vhxdemo.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.2.0] /Users/william/.gradle/caches/transforms-3/9e497d5e9f54b6e90ad951dbab4c9ece/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/william/.gradle/caches/transforms-3/e06aa37db755f95a071deab60dc4e10c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+86        </provider>
+87    </application>
+88
+89</manifest>
