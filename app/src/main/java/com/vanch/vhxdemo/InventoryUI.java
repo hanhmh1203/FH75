@@ -43,6 +43,16 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.media.ToneGenerator;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.os.Vibrator;
+import android.content.Context;
+import android.media.RingtoneManager;
+import android.media.Ringtone;
+import android.net.Uri;
+import android.media.AudioTrack;
+import android.media.AudioFormat;
 
 import com.vanch.vhxdemo.AccessUI.StatusChangeEvent;
 import com.vanch.vhxdemo.helper.Utility;
@@ -88,6 +98,9 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 	Button btnInventory, btnStop, btnSave, btnSubmit, btnCheckProduct;
 	TextView txtCount;
 	EditText editProductCode;
+	EditText editScannedEpc;
+	private ToneGenerator toneGenerator;
+	private MediaPlayer beepPlayer;
 	ListAdapter adapter;
 	List<Epc> epcs = new ArrayList<Epc>();
 	Map<String, Integer> epc2num = new ConcurrentHashMap<String, Integer>();
@@ -211,6 +224,7 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 		});
 		
 		editProductCode = (EditText) view.findViewById(R.id.edit_product_code);
+		editScannedEpc = (EditText) view.findViewById(R.id.edit_scanned_epc);
 		btnCheckProduct = (Button) view.findViewById(R.id.btn_check_product);
 		btnCheckProduct.setOnClickListener(new OnClickListener() {
 			@Override
@@ -218,6 +232,24 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 				checkProductCode();
 			}
 		});
+		
+		// Initialize ToneGenerator for beep sound
+		try {
+			toneGenerator = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100);
+		} catch (RuntimeException e) {
+			Log.e(TAG, "Failed to create ToneGenerator: " + e.getMessage());
+		}
+		
+		// Initialize Vibrator
+		vibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+		
+		// Initialize MediaPlayer for beep sound
+		try {
+			// Create a simple tone instead of using raw resource
+			beepPlayer = null; // We'll use ToneGenerator instead
+		} catch (Exception e) {
+			Log.e(TAG, "Failed to create MediaPlayer: " + e.getMessage());
+		}
 		
 		btnInventory = (Button) view.findViewById(R.id.btn_inventory);
 		btnInventory.setOnClickListener(new OnClickListener() {
@@ -523,8 +555,10 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 
 	private void addEpc(VH73Device.ListTagIDResult list) {
 		ArrayList<byte[]> epcs = list.epcs;
+		String latestEpc = null;
 		for (byte[] bs : epcs) {
 			String string = Utility.bytes2HexString(bs);
+			latestEpc = string; // Keep track of latest EPC
 			if (!ConfigUI.getConfigSkipsame(getActivity())) {
 				if (epc2num.containsKey(string)) {
 					epc2num.put(string, epc2num.get(string) + 1);
@@ -538,6 +572,11 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 			// 改为下面表格有多少行，则为多少行显示,add by martrin 20131114
 			readCount = epc2num.size();
 		}
+		
+		// Check latest EPC after processing
+		if (latestEpc != null) {
+			checkLatestEpcMatch(latestEpc);
+		}
 	}
 
 	private void addEpcTest(String strEpc) {
@@ -547,6 +586,9 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 			epc2num.put(strEpc, 1);
 		}
 		readCount = epc2num.size();
+		
+		// Check EPC match for test mode
+		checkLatestEpcMatch(strEpc);
 	}
 
 	/**
@@ -586,6 +628,168 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 		listView.setAdapter(adapter);
 		// listView.scrollTo(0, adapter.getCount());
 		listView.setSelection(listView.getAdapter().getCount() - 1);
+	}
+	
+	/**
+	 * Generate pure BEEP sound using AudioTrack
+	 */
+	private void generateBeepSound() {
+		new Thread(() -> {
+			try {
+				int sampleRate = 44100;
+				int duration = 800; // 800ms BEEP
+				int frequency = 2000; // 2000Hz - classic BEEP frequency
+				
+				int numSamples = (int) (duration * sampleRate / 1000.0);
+				double[] sample = new double[numSamples];
+				byte[] generatedSnd = new byte[2 * numSamples];
+				
+				// Generate sine wave for BEEP
+				for (int i = 0; i < numSamples; ++i) {
+					sample[i] = Math.sin(2 * Math.PI * i / (sampleRate / frequency));
+				}
+				
+				// Convert to 16-bit PCM sound array
+				int idx = 0;
+				for (final double dVal : sample) {
+					final short val = (short) ((dVal * 32767));
+					generatedSnd[idx++] = (byte) (val & 0x00ff);
+					generatedSnd[idx++] = (byte) ((val & 0xff00) >>> 8);
+				}
+				
+				// Play the BEEP
+				int bufferSize = AudioTrack.getMinBufferSize(sampleRate, 
+						AudioFormat.CHANNEL_OUT_MONO, 
+						AudioFormat.ENCODING_PCM_16BIT);
+				
+				AudioTrack audioTrack = new AudioTrack(
+						AudioManager.STREAM_ALARM,
+						sampleRate,
+						AudioFormat.CHANNEL_OUT_MONO,
+						AudioFormat.ENCODING_PCM_16BIT,
+						bufferSize,
+						AudioTrack.MODE_STREAM);
+				
+				audioTrack.play();
+				audioTrack.write(generatedSnd, 0, generatedSnd.length);
+				audioTrack.stop();
+				audioTrack.release();
+				
+				Log.i(TAG, "Pure BEEP sound generated and played!");
+				
+			} catch (Exception e) {
+				Log.e(TAG, "Failed to generate BEEP sound: " + e.getMessage());
+			}
+		}).start();
+	}
+	
+	/**
+	 * Play match sound and vibration
+	 */
+	private void playMatchSound() {
+		try {
+			boolean soundPlayed = false;
+			
+			// Method 1: PURE BEEP SOUND - Real "BEEPPPPP" tone
+			try {
+				generateBeepSound();
+				soundPlayed = true;
+				Log.i(TAG, "🔊 PURE BEEP sound generated!");
+			} catch (Exception e) {
+				Log.e(TAG, "Pure BEEP failed: " + e.getMessage());
+			}
+			
+			// Method 2: PANIC ALARM - System alarm sound (backup)
+			if (!soundPlayed) {
+				try {
+					Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+					if (alarmSound != null) {
+						Ringtone alarm = RingtoneManager.getRingtone(getActivity(), alarmSound);
+						if (alarm != null) {
+							alarm.play();
+							// Stop after 1 second
+							new Thread(() -> {
+								try {
+									Thread.sleep(1000);
+									alarm.stop();
+								} catch (InterruptedException ex) {}
+							}).start();
+							soundPlayed = true;
+							Log.i(TAG, "PANIC ALARM sound played");
+						}
+					}
+				} catch (Exception e) {
+					Log.e(TAG, "Alarm sound failed: " + e.getMessage());
+				}
+			}
+			
+			// Method 3: DTMF Emergency Tones (backup)
+			if (!soundPlayed) {
+				try {
+					ToneGenerator panicTone = new ToneGenerator(AudioManager.STREAM_ALARM, 100);
+					// Play rapid emergency beep sequence
+					new Thread(() -> {
+						try {
+							for (int i = 0; i < 3; i++) {
+								panicTone.startTone(ToneGenerator.TONE_CDMA_EMERGENCY_RINGBACK, 200);
+								Thread.sleep(250);
+								panicTone.startTone(ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD, 200);
+								Thread.sleep(250);
+							}
+							panicTone.release();
+						} catch (InterruptedException ex) {}
+					}).start();
+					soundPlayed = true;
+					Log.i(TAG, "Emergency tone sequence played");
+				} catch (RuntimeException e) {
+					Log.e(TAG, "Emergency tone sequence failed: " + e.getMessage());
+				}
+			}
+			
+			// BEEP Vibration pattern (classic BEEP style)
+			if (vibrator != null && vibrator.hasVibrator()) {
+				// Single long vibration to match BEEP sound
+				vibrator.vibrate(800); // 800ms to match BEEP duration
+				Log.i(TAG, "BEEP vibration played");
+			}
+			
+			if (soundPlayed) {
+				Log.i(TAG, "� BEEPPPPP! Match detected - Pure BEEP sound played");
+			} else {
+				Log.w(TAG, "� VIBRATE ONLY! Match detected - All BEEP sounds failed");
+			}
+			
+		} catch (Exception e) {
+			Log.e(TAG, "Failed to play BEEP sound: " + e.getMessage());
+		}
+	}
+	
+	/**
+	 * Check if latest scanned EPC matches product code and beep if match
+	 */
+	private void checkLatestEpcMatch(String latestEpc) {
+		if (editProductCode == null || editScannedEpc == null) return;
+		
+		// Set the latest scanned EPC in the second EditText
+		if (latestEpc != null && !latestEpc.isEmpty()) {
+			editScannedEpc.setText(latestEpc);
+		}
+		
+		String productCode = editProductCode.getText().toString().trim();
+		
+		// Check if product code is not empty
+		if (productCode.isEmpty()) {
+			return;
+		}
+		
+		// Check if latest EPC matches product code
+		if (latestEpc != null && latestEpc.equalsIgnoreCase(productCode)) {
+			// Play enhanced beep sound and vibration
+			playMatchSound();
+			
+			// Log the match
+			LogManager.getInstance(getActivity()).logInfo("EPC MATCH FOUND: " + latestEpc + " matches product code: " + productCode);
+		}
 	}
 
 	@Override
@@ -643,6 +847,19 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 		EventBus.getDefault().unregister(this);
 		//findEpcSound.stop();
 		findEpcSound.release();
+		
+		// Release ToneGenerator
+		if (toneGenerator != null) {
+			toneGenerator.release();
+			toneGenerator = null;
+		}
+		
+		// Release MediaPlayer
+		if (beepPlayer != null) {
+			beepPlayer.release();
+			beepPlayer = null;
+		}
+		
 		super.onDestroy();
 	}
 
@@ -760,28 +977,42 @@ public class InventoryUI extends Fragment implements OnItemLongClickListener {
 	 * Check if entered product code exists in scanned inventory
 	 */
 	private void checkProductCode() {
-		String productCode = editProductCode.getText().toString().trim();
-		
-		if (productCode.isEmpty()) {
-			Toast.makeText(getActivity(), "Please enter a product code", Toast.LENGTH_SHORT).show();
+		if (editProductCode == null || editScannedEpc == null) {
+			Toast.makeText(getActivity(), "EditText not initialized", Toast.LENGTH_SHORT).show();
 			return;
 		}
 		
-		// Convert input to uppercase to match EPC format
-		productCode = productCode.toUpperCase();
+		String productCode = editProductCode.getText().toString().trim();
+		String scannedEpc = editScannedEpc.getText().toString().trim();
 		
-		if (epc2num.containsKey(productCode)) {
-			int count = epc2num.get(productCode);
-			Toast.makeText(getActivity(), 
-				String.format("Product found! Count: %d", count), 
-				Toast.LENGTH_LONG).show();
-		} else {
-			Toast.makeText(getActivity(), 
-				"Product code not found in inventory", 
-				Toast.LENGTH_LONG).show();
+		if (productCode.isEmpty()) {
+			Toast.makeText(getActivity(), "Please enter a product code to check", Toast.LENGTH_SHORT).show();
+			return;
 		}
 		
-		// Clear the input field after check
-		editProductCode.setText("");
+		if (scannedEpc.isEmpty()) {
+			Toast.makeText(getActivity(), "No scanned EPC available. Please scan or enter EPC manually.", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		
+		// Check if scanned EPC matches product code
+		if (scannedEpc.equalsIgnoreCase(productCode)) {
+			// Play enhanced beep sound and vibration for manual check
+			playMatchSound();
+			
+			Toast.makeText(getActivity(), "✅ MATCH! EPC matches product code", Toast.LENGTH_LONG).show();
+			LogManager.getInstance(getActivity()).logInfo("MANUAL CHECK - EPC MATCH: " + scannedEpc + " matches product code: " + productCode);
+		} else {
+			Toast.makeText(getActivity(), "❌ NO MATCH. EPC: " + scannedEpc + " ≠ Product: " + productCode, Toast.LENGTH_LONG).show();
+			LogManager.getInstance(getActivity()).logInfo("MANUAL CHECK - NO MATCH: " + scannedEpc + " vs " + productCode);
+		}
+		
+		// Check if the scanned EPC exists in inventory
+		if (epc2num.containsKey(scannedEpc)) {
+			int count = epc2num.get(scannedEpc);
+			Toast.makeText(getActivity(), "EPC found in inventory (" + count + " times)", Toast.LENGTH_SHORT).show();
+		} else {
+			Toast.makeText(getActivity(), "EPC not found in current inventory", Toast.LENGTH_SHORT).show();
+		}
 	}
 }
