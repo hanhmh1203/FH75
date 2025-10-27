@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vanch.vhxdemo"
     android:versionCode="18"
-    android:versionName="1.0.18" >
+    android:versionName="1.0.18-b1" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -19,6 +19,9 @@
     <!-- Location permission is also required for Bluetooth scan on Android 10+ -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Vibration permission for haptic feedback -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <supports-screens
         android:anyDensity="true"

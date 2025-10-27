@@ -80,6 +80,7 @@ id edit_data_len
 id edit_epc
 id edit_passwd
 id edit_product_code
+id edit_scanned_epc
 id edit_start
 id edit_timeout
 id group_lang
@@ -88,6 +89,7 @@ id include1
 id include2
 id include5
 id layout_product_check
+id layout_scanned_epc
 id list_rfid
 id radioGroup_op
 id radio_autolink

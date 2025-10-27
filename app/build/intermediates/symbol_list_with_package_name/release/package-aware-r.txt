@@ -811,6 +811,7 @@ id edit_epc
 id edit_passwd
 id edit_product_code
 id edit_query
+id edit_scanned_epc
 id edit_start
 id edit_timeout
 id end
@@ -837,6 +838,7 @@ id include5
 id info
 id italic
 id layout_product_check
+id layout_scanned_epc
 id left
 id line1
 id line3
